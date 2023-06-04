@@ -1,3 +1,1 @@
-CREATE USER onebitflix WITH ENCRYPTED PASSWORD 'onebitflix';
-CREATE DATABASE onebitflix;
-GRANT ALL PRIVILEGES ON DATABASE onebitflix TO onebitflix;
+CREATE USER onebitflix WITH CREATEDB ENCRYPTED PASSWORD 'onebitflix';
