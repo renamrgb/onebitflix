@@ -1,5 +1,5 @@
 import express from "express"
-import { database } from "./database"
+import { sequelize } from "./database"
 import { adminJs, adminJsRouter } from "./adminjs"
 
 const app = express()
@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
 
-    database.authenticate().then(() => {
+    sequelize.authenticate().then(() => {
         console.log('DB connection successfull.')
     })
 
